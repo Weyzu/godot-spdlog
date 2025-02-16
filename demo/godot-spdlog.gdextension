@@ -1,0 +1,13 @@
+[configuration]
+
+entry_symbol = "godot_spdlog_init"
+compatibility_minimum = "4.3"
+reloadable = false
+
+[libraries]
+
+linux.release.x86_64 = "res://libgodot-spdlog.so"
+linux.x86_64 = "res://libgodot-spdlog.so"
+
+[dependencies]
+
