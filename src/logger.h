@@ -23,6 +23,7 @@ public:
   void log_warning(std::string_view message);
   void log_critical(std::string_view message);
   void log_debug(std::string_view message);
+  void flush();
 
   static Logger* get_instance();
 

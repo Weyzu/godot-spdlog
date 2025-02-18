@@ -15,6 +15,7 @@ void initialize_extension(const godot::ModuleInitializationLevel initLevel) {
 
   auto logger = Logger::get_instance();
   logger->log_info(std::string("spdlog logger initialized"));
+  logger->flush();
 }
 
 void terminate_extension(godot::ModuleInitializationLevel initLevel) {

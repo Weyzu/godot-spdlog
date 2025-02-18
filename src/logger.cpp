@@ -22,6 +22,8 @@ void Logger::log_error(std::string_view message) { logger->error(message); }
 
 void Logger::log_critical(std::string_view message) { logger->critical(message); }
 
+void Logger::flush() { logger->flush(); }
+
 void Logger::_bind_methods() {}
 
 Logger::Logger() {
