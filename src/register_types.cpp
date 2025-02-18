@@ -7,7 +7,7 @@
 #include <string>
 
 void initialize_extension(const godot::ModuleInitializationLevel initLevel) {
-  if(initLevel != godot::MODULE_INITIALIZATION_LEVEL_CORE) {
+  if(initLevel != godot::MODULE_INITIALIZATION_LEVEL_SCENE) {
     return;
   }
 
@@ -19,7 +19,7 @@ void initialize_extension(const godot::ModuleInitializationLevel initLevel) {
 }
 
 void terminate_extension(godot::ModuleInitializationLevel initLevel) {
-  if(initLevel != godot::MODULE_INITIALIZATION_LEVEL_CORE) {
+  if(initLevel != godot::MODULE_INITIALIZATION_LEVEL_SCENE) {
     return;
   }
   godot::memdelete(Logger::get_instance());
